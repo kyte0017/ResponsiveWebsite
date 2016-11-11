@@ -1,0 +1,599 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Lora|Montserrat|Roboto+Slab');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Montserrat', 'Cabin', 'Lato', sans-serif;
+    color: #46737F;
+    background-color: #33AACC;
+}
+
+.masthead {
+    background: url('http://lorempixel.com/400/200/nature/5');
+    background-repeat: no-repeat;
+    /*        Maek sure no repeat*/
+    background-size: cover;
+    /*        This is to cover trhe entire page*/
+    font-style: bold;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+h1 {
+    font: bold 4.236rem 'Roboto Slab', 'Lora', 'Times', serif;
+    border-bottom: 8px;
+    margin: 8px;
+    color: #E0F7FF;
+    padding: 15px 8px 15px 8px;
+    border-radius: 10px;
+    text-align: center;
+    /*        background-color: #216D83;*/
+}
+
+
+/*@media screen and (max-width:600px) {*/
+
+h2 {
+    font: bold 4.236rem 'Roboto Slab', 'Lora', 'Times', serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #E0F7FF;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+li,
+p,
+a {
+    font: bold 1.618rem 'Montserrat', 'Cabin', 'Lato', sans-serif;
+    text-decoration: none;
+    color: #33AACC;
+    text-align: left;
+}
+
+.colfirst p {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    background: #E0F7FF;
+    text-align: left;
+    color: #46737F;
+}
+
+.colsecond p {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    background: #E0F7FF;
+    text-align: left;
+    color: #46737F;
+}
+
+pre,
+code,
+kbd {
+    font: 'Montserrat', 'Cabin', 'Lato', sans-serif;
+}
+
+img {
+    width: 95%;
+    height: auto;
+    max-width: 95%;
+    background-color: azure;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: 8px;
+}
+
+footer p {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer li {
+    padding: 3px 8px 3px 8px;
+    font-size: 1rem;
+    text-align: center;
+    /*    text-align: center;*/
+}
+
+
+/***************************
+    LAYOUT - MOBILE FIRST UNDER 600px in width
+***************************/
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #8CE5FF;
+}
+
+header {
+    width: 100%;
+    /*        background-color: #216D83;*/
+    border-radius: 15px;
+}
+
+
+/*The MOBILE NAV WILL BE STACKED*/
+
+nav {
+    width: 100%;
+}
+
+nav>ul {
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+    list-style: none;
+    border-radius: 10px;
+    list-style: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    font: bold 1.618rem 'Montserrat', 'Cabin', 'Lato', sans-serif;
+    display: block;
+    padding: 8px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #8CE5FF;
+    background-color: #216D83;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {
+    background-color: #33AACC;
+    color: #46737F;
+}
+
+main {
+    width: 100%;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    max-width: 95%;
+    background-color: azure;
+}
+
+footer {
+    width: 100%;
+    background-color: #216D83;
+    border-radius: 15px;
+    color: #33AACC;
+    text-decoration: none;
+    clear: left;
+}
+
+
+/*600 MIN WIDTH - SMALL SCREEN !!!!!! */
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    h2 {
+     font-size: 2.618rem;   
+    }
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 8px;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: #8CE5FF;
+    }
+    nav {
+        width: 90%;
+    }
+    nav>ul {
+        width: 100%;
+    }
+    nav li {
+        /*        width: 20%;*/
+        /*        float: left;*/
+        list-style: none;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font: bold 1.1rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        padding: 8px 7px 8px 7px;
+        margin: 10px;
+        text-align: center;
+        color: #8CE5FF;
+        background-color: #216D83;
+        text-decoration: none;
+        float: left;
+        overflow-x: visible;
+        border-radius: 10px;
+        width: 18%;
+    }
+
+nav a:last-child {
+    margin-right: 0px;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {
+    background-color: #33AACC;
+    color: #46737F;
+}
+
+main {
+    width: 100%;
+}
+
+.colfirst {
+    width: 48%;
+    float: left;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #E0F7FF;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.colfirst p {
+    font-size: 0.618;
+}
+
+.colsecond {
+    width: 48%;
+    float: left;
+    padding: 1rem 2rem 1rem 2rem;
+    ;
+    background: #E0F7FF;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-right: 0px;
+}
+
+footer {
+    width: 100%;
+    background-color: #216D83;
+    border-radius: 15px;
+    color: #33AACC;
+    text-decoration: none;
+    display: block;
+    clear: left;
+}
+
+footer .li {
+    /*    text-decoration: none;*/
+    background-color: #216D83;
+    color: #33AACC;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    max-width: 95%;
+    background-color: azure;
+    border-radius: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+}
+
+/*600 MEDIUM WIDTH SCREEN !!!!!! */
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    h1 {
+        font: bold 4.236rem 'Roboto Slab', 'Lora', 'Times', serif;
+        border-bottom: 5px;
+        margin: 8px;
+        color: #E0F7FF;
+        padding: 7rem 2rem 7rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    h2 {
+        font: bold 2.618rem 'Roboto Slab', 'Lora', 'Times', serif;
+        padding-bottom: 10px;
+    }
+    
+    li,
+    p,
+    a {
+        font: bold 1rem 'Montserrat', 'Cabin', 'Lato', sans-serif;
+        text-decoration: none;
+        color: #33AACC;
+    }
+    
+    pre,
+    code,
+    kbd {
+        font: normal 1.0rem 'Roboto Slab', 'Lora', 'Times', serif,
+    }
+    
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+        padding: 8px;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: #8CE5FF;
+    }
+    
+    header {
+        width: 100%;
+        background-color: #216D83;
+        border-radius: 15px;
+    }
+    
+    li,
+    p,
+    a {
+        font: bold 1.5rem 'Montserrat', 'Cabin', 'Lato', sans-serif;
+        text-decoration: none;
+        color: #33AACC;
+        text-align: left;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav>ul {
+        width: 100%;
+    }
+    
+    nav li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font: bold 1.2rem 'Montserrat', 'Cabin', 'Lato', sans-serif;
+        padding: 8px 4px 8px 4px;
+        margin: 8px;
+        text-align: center;
+        color: #8CE5FF;
+        background-color: #216D83;
+        text-decoration: none;
+        float: left;
+     border-radius: 10px;
+        width: 17%;
+    }
+    
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        background-color: #33AACC;
+        color: #46737F;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    .colfirst {
+        width: 48%;
+        float: left;
+        padding: 1rem 2rem 1rem 2rem;
+        background: #E0F7FF;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .colfirst p {
+        font-size: 0.618;
+    }
+    
+    .colsecond {
+        width: 48%;
+        float: left;
+        padding: 1rem 2rem 1rem 2rem;
+        ;
+        background: #E0F7FF;
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    footer {
+        width: 100%;
+        background-color: #216D83;
+        border-radius: 15px;
+        color: #33AACC;
+        text-decoration: none;
+        display: block;
+        clear: left;
+    }
+    
+    footer .li {
+        /*    text-decoration: none;*/
+        background-color: #216D83;
+        color: #33AACC;
+    }
+    
+    img {
+        width: 50%;
+        height: auto;
+        max-width: 95%;
+        background-color: azure;
+        border-radius: 10px;
+        float: left;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font: bold 6.854rem 'Roboto Slab', 'Lora', 'Times', serif;
+        border-bottom: 5px;
+        margin: 8px;
+        color: #E0F7FF;
+        padding: 7rem 2rem 7rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    h2 {
+        font: bold 4.236rem 'Robo Slab', 'Lora', 'Times', serif;
+        padding-bottom: 10px;
+    }
+    
+    li,
+    p,
+    a {
+        font: bold 2.618rem 'Montserrat', 'Cabin', 'Lato', sans-serif;
+        text-decoration: none;
+        color: #33AACC;
+    }
+    
+    pre,
+    code,
+    kbd {
+        font: normal 1.618rem 'Robo Slab', 'Lora', 'Times', serif;
+        ,
+    }
+    
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+        padding: 8px;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: #8CE5FF;
+    }
+    
+    header {
+        width: 100%;
+        background-color: #216D83;
+        border-radius: 15px;
+    }
+    
+    li,
+    p,
+    a {
+        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        text-decoration: none;
+        color: #33AACC;
+        text-align: left;
+    }
+    
+    nav {
+        width: 18%;
+    }
+    
+    nav>ul {
+        width: 100%;
+    }
+    
+    nav li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        padding: 8px 4px 8px 4px;
+        text-align: center;
+        color: #8CE5FF;
+        background-color: #216D83;
+        text-decoration: none;
+        float: left;
+        overflow-x: visible;
+        border-radius: 10px;
+        width: 100%;
+        overflow: auto;
+        margin-right: 0px;
+        display: block;
+    }
+    
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        background-color: #33AACC;
+        color: #46737F;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    .colfirst {
+        width: 39%;
+        float: left;
+        padding: 1rem 2rem 1rem 2rem;
+        background: #E0F7FF;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .colfirst p {
+        font-size: 0.618;
+    }
+    
+    .colsecond {
+        width: 39%;
+        float: left;
+        padding: 1rem 2rem 1rem 2rem;
+        ;
+        background: #E0F7FF;
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+}
